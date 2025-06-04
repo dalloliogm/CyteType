@@ -105,7 +105,7 @@ The `study_context` should include comprehensive biological information about yo
 ```python
 annotator = CyteType(
     adata,
-    group_key='leiden',                    # Required: cluster column name
+    group_key='clusters',                  # Required: cluster column name
     rank_key='rank_genes_groups',          # DE results key (default)
     gene_symbols_column='gene_symbols',    # Gene symbols column (default)
     n_top_genes=50,                        # Top marker genes per cluster
